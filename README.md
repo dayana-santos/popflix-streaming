@@ -1,7 +1,8 @@
 ![Logo PopFlix](https://user-images.githubusercontent.com/110435480/206823140-3d0a059a-fc20-4a89-b864-a77117910fa5.png)
 # PopFlix
 
-NetFlix clone para estudos de HTML, CSS, JavaScript e Node.
+NetFlix clone para estudos de HTML, CSS, JavaScript e Node. <br>
+Lista dinâmica de filmes consumida através da API The Movie Database.
 
 Foi utilizado logo e cores do projeto de UX/UI Design [PopFlix](https://www.behance.net/gallery/131159207/Popflix-UXUI-Prototype)
 <br>
