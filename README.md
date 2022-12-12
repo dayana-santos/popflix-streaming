@@ -7,6 +7,4 @@ Foi utilizado logo e cores do projeto de UX/UI Design [PopFlix](https://www.beha
 <br>
 <br>
 
-![Splash Screen PopFlix](https://user-images.githubusercontent.com/110435480/206823080-bc583914-78f1-4ca6-8fe5-9c48ab432b03.PNG)
-![Página Inicial PopFlix](https://user-images.githubusercontent.com/110435480/206823093-c1b522f6-3e30-472d-8edc-a38a97ed82e0.PNG)
-
+![Página Inicial](https://user-images.githubusercontent.com/110435480/207182927-bbc4c62c-4038-4eef-8ed0-52099269c8e1.png)
