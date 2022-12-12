@@ -33,7 +33,7 @@ const makeCategoryElement = (category, data) => {
                 <img src="img/prev.png" alt="previous button">
             </button>
 
-            <h1 class="movie-category">id="${category}"</h1>
+            <h1 class="movie-category">${category.replace("_", " ")}</h1>
 
             <div class="movie-container" id="${category}">
                 
@@ -45,4 +45,35 @@ const makeCategoryElement = (category, data) => {
 
         </div>
         `
+
+    makeCards(category, data)
+}
+
+const makeCards = (id, data) => {
+    const movieContainer = document.getElementById(id)
+
+    data.forEach((item, i)=> {
+        if(item.backdrop_path == null) {
+            item.backdrop_path = item.poster_path;
+            if(item.backdrop_path == null){
+                return
+            }
+        }
+
+        movieContainer.innerHTML += `
+            <div class="movie">
+                <img src="${img_url}${item.backdrop_path}" alt="Imagem poster de filme">
+                <p class="movie-title">${item.title}</p>
+            </div>
+        `
+
+        /* chamar a função do scroll para o carrossel, após carregamento dos posters*/
+        if(i == data.length -1) {
+            setTimeout(()=>{
+                setupScrolling()
+            }, 100)
+        }
+
+    })
+
 }

@@ -54,11 +54,16 @@ body {
     border-color: #35988C;
 }
 
+.btn:hover,
+.join-btn:hover {
+    opacity: 0.9;
+}
+
 .main {
     position: relative;
     margin-top: 60px;
     width: 100%;
-    padding: 20px 2.5vw;
+    padding: 60px 3vw;
     color: #fff;
 }
 
@@ -77,24 +82,29 @@ body {
 .movie-list {
     width: 100%;
     height: 250px;
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
 }
 
 .movie-category {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     text-transform: capitalize;
 }
 
 .movie-container {
     width: 100%;
-    height: 200px;
+    height: 220px;
     align-items: center;
-    /*overflow-x: auto;
-    overflow-y: hidden;*/
+    overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
+    display: flex;
+}
+
+.movie-container::-webkit-scrollbar{
+    display: none;
 }
 
 .movie-category::-webkit-scrollbar{
@@ -105,23 +115,30 @@ body {
     flex: 0 0 auto;
     width: 24%;
     height: 200px;
-    text-align: center;
-    margin-right: 10px;
+    text-align: left;
+    margin-right: 20px;
     cursor: pointer;
     position: relative;
-    border: 1px solid red;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
 }
 
 .movie img {
     width: 100%;
     height: 170px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .movie p {
     text-transform: capitalize;
+    color: #fff 0.5;
     height: 20px;
     overflow: hidden;
+}
+
+.movie:hover {
+   transform: scale(1.1);
 }
 
 .pre-btn,
